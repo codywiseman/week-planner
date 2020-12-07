@@ -6,6 +6,18 @@ body {
   justify-content: center;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .height {
   height: 12rem;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.height100 {
+  height: 100vh;
 }

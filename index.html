@@ -7,29 +7,72 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="grid.css">
 </head>
-<body>
-  <div class="container">
+<body class="row">
+  <div class="container align-center">
     <header class="row justify-center">
       <h1>Weekly Planner</h1>
     </header>
-    <section>
-      <h1>Add Entry</h1>
-        <form action="">
-          <select name=""  id="">
-            <option value="" selected disabled>Day of the Week</option>
-            <option value="" >Sunday</option>
-            <option value="" >Monday</option>
-            <option value="" >Tuesday</option>
-            <option value="" >Wednesday</option>
-            <option value="" >Thursday</option>
-            <option value="" >Friday</option>
-            <option value="" >Saturday</option>
-          </select>
-          <select name="" id=""></select>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-        </form>
-    </section>
-    <div class="height"></div>
+    <div class="row justify-center height100 align-center">
+      <section class="blue">
+        <div>
+          <h1>Add Entry</h1>
+        </div>
+        <div>
+          <form action="">
+            <div>
+              <select name="day-of-week" id="day-of-week">
+                <option value="" selected disabled>Day of the Week</option>
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+              </select>
+              <select name="time" id="time">
+                <option value="" selected disabled>Time</option>
+                <option value="6:00am">6:00am</option>
+                <option value="7:00am">7:00am</option>
+                <option value="8:00am">8:00am</option>
+                <option value="9:00am">9:00am</option>
+                <option value="10:00am">10:00am</option>
+                <option value="11:00am">11:00am</option>
+                <option value="12:00pm">12:00pm</option>
+                <option value="1:00pm">1:00pm</option>
+                <option value="2:00pm">2:00pm</option>
+                <option value="3:00pm">3:00pm</option>
+                <option value="4:00pm">4:00pm</option>
+                <option value="5:00pm">5:00pm</option>
+                <option value="6:00pm">6:00pm</option>
+                <option value="7:00pm">7:00pm</option>
+                <option value="8:00pm">8:00pm</option>
+                <option value="9:00pm">9:00pm</option>
+                <option value="10:00pm">10:00pm</option>
+                <option value="11:00pm">11:00pm</option>
+                <option value="00:00am">00:00am</option>
+              </select>
+            </div>
+            <div>
+              <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10">Description</textarea>
+            </div>
+            <div>
+              <input
+              id="submit-entry-button"
+              name="submit-entry-button"
+              type="submit"
+              value="Submit"
+              required>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="height hidden"></div>
     <section class="row justify-center hidden">
       <button id="add-entry-button">Add Entry</button>
     </section>

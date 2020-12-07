@@ -18,9 +18,9 @@
           <h2>Add Entry</h2>
         </div>
         <div>
-          <form action="">
+          <form id="form" action="">
             <div>
-              <select class="modal-margin" name="day-of-week" id="day-of-week">
+              <select class="modal-margin" name="day-of-week" id="day-of-week" required>
                 <option value="" selected disabled>Day of the Week</option>
                 <option value="sunday">Sunday</option>
                 <option value="monday">Monday</option>
@@ -30,7 +30,7 @@
                 <option value="friday">Friday</option>
                 <option value="saturday">Saturday</option>
               </select>
-              <select name="time" id="time">
+              <select name="time" id="time" required>
                 <option value="" selected disabled>Time</option>
                 <option value="6:00am">6:00am</option>
                 <option value="7:00am">7:00am</option>
@@ -58,7 +58,9 @@
               name="description"
               id="description"
               cols="30"
-              rows="10">Description</textarea>
+              rows="10"
+              placeholder="Description"
+              required></textarea>
             </div>
             <div class="modal-margin modal-submit">
               <input
@@ -72,7 +74,29 @@
         </div>
       </section>
     </div>
-    <div class="height"></div>
+    <div class="height row align-center week-day-box">
+      <div class="flex-basis-7">
+        <p>Sunday</p>
+      </div>
+      <div class="flex-basis-7">
+        <p>Monday</p>
+      </div>
+      <div class="flex-basis-7">
+        <p>Tuesday</p>
+      </div>
+      <div class="flex-basis-7">
+        <p>Wednesday</p>
+      </div>
+      <div class="flex-basis-7">
+        <p>Thursday</p>
+      </div>
+      <div class="flex-basis-7">
+        <p>Friday</p>
+      </div>
+      <div class="flex-basis-7">
+        <p>Saturday</p>
+      </div>
+    </div>
     <section class="row justify-center">
       <button id="add-entry-button">Add Entry</button>
     </section>

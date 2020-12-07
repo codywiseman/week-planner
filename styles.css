@@ -1,4 +1,11 @@
+body {
+  font-family: sans-serif;
+}
 
 .justify-center {
   justify-content: center;
+}
+
+.height {
+  height: 12rem;
 }

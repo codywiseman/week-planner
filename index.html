@@ -12,15 +12,15 @@
     <header class="row justify-center">
       <h1>Weekly Planner</h1>
     </header>
-    <div class="row justify-center height100 align-center">
+    <div class="row position">
       <section class="blue">
-        <div>
-          <h1>Add Entry</h1>
+        <div class="modal-padding">
+          <h2>Add Entry</h2>
         </div>
         <div>
           <form action="">
             <div>
-              <select name="day-of-week" id="day-of-week">
+              <select class="modal-margin" name="day-of-week" id="day-of-week">
                 <option value="" selected disabled>Day of the Week</option>
                 <option value="sunday">Sunday</option>
                 <option value="monday">Monday</option>
@@ -30,7 +30,7 @@
                 <option value="friday">Friday</option>
                 <option value="saturday">Saturday</option>
               </select>
-              <select name="time" id="time">
+              <select class="modal-margin" name="time" id="time">
                 <option value="" selected disabled>Time</option>
                 <option value="6:00am">6:00am</option>
                 <option value="7:00am">7:00am</option>
@@ -53,14 +53,14 @@
                 <option value="00:00am">00:00am</option>
               </select>
             </div>
-            <div>
+            <div class="modal-margin">
               <textarea
               name="description"
               id="description"
               cols="30"
               rows="10">Description</textarea>
             </div>
-            <div>
+            <div class="modal-margin modal-submit">
               <input
               id="submit-entry-button"
               name="submit-entry-button"

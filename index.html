@@ -12,8 +12,8 @@
     <header class="row justify-center">
       <h1>Weekly Planner</h1>
     </header>
-    <div class="row position">
-      <section class="blue">
+    <div class="row position hidden">
+      <section class="modal-width">
         <div class="modal-padding">
           <h2>Add Entry</h2>
         </div>
@@ -30,7 +30,7 @@
                 <option value="friday">Friday</option>
                 <option value="saturday">Saturday</option>
               </select>
-              <select class="modal-margin" name="time" id="time">
+              <select name="time" id="time">
                 <option value="" selected disabled>Time</option>
                 <option value="6:00am">6:00am</option>
                 <option value="7:00am">7:00am</option>
@@ -72,8 +72,8 @@
         </div>
       </section>
     </div>
-    <div class="height hidden"></div>
-    <section class="row justify-center hidden">
+    <div class="height"></div>
+    <section class="row justify-center">
       <button id="add-entry-button">Add Entry</button>
     </section>
   </div>

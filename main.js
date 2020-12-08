@@ -102,5 +102,4 @@ function renderEntries(day) {
     tRow.appendChild(tColTwo);
 
   return table
-
 }

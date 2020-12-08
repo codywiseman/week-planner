@@ -52,15 +52,27 @@ window.addEventListener("DOMContentLoaded", function(event) {
 })
 
 
-var dummyEntry = {
-  dayOfWeek: $dayOfWeek,
-  time: $time,
-  entryDescription: $entryDescription
-}
+var dummyEntry = [
+  {
+    dayOfWeek: "Monday",
+    time: "8:30am",
+    entryDescription: "Breakfest"
+  },
+  {
+    dayOfWeek: "Monday",
+    time: "4:00pm",
+    entryDescription: "Lunch"
+  },
+  {
+    dayOfWeek: "Tuesday",
+    time: "1:00pm",
+    entryDescription: "Work"
+  },
+]
 
-function renderEntries() {
+function renderEntries(day) {
   var h3 = document.createElement('h3');
-    h3.textContent = 'Scheduled Events for '
+    h3.textContent = 'Scheduled Events for ' + day;
   var table = document.createElement('table');
   var thead = document.createElement('thead');
   var tbody = document.createElement('tbody');
@@ -78,7 +90,7 @@ function renderEntries() {
   table.appendChild(tbody);
 
 
-  for()
+
     var tRow = document.createElement('tr');
     var tColOne = document.createElement('td');
     tColOne.className = 'col-one';

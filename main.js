@@ -50,3 +50,23 @@ window.addEventListener("DOMContentLoaded", function(event) {
     $weekDayBoxes.className = 'row align-center height100 hidden';
   }
 })
+
+function renderEntries() {
+  var h3 = document.createElement('h3');
+    h3.textContent = 'Scheduled Events for '
+  var table = document.createElement('table');
+  var thead = document.createElement('thead');
+
+  var thTime = document.createElement('th');
+  var thDescritpion = document.createElement('th');
+
+  thTime.textContent = 'Time';
+  thDescritpion.textContent = 'Descritpion';
+
+  thead.appendChild(thTime);
+  thead.appendChild(thDescritpion);
+  table.appendChild(thead);
+
+
+
+}

@@ -76,3 +76,32 @@ a {
   text-decoration: none;
   color: #000000;
 }
+
+h3 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border: 2px solid #000000;
+  border-collapse: collapse;
+}
+
+.col-one {
+  width: 25%;
+}
+
+.col-two {
+  width: 75%;
+  border-left: 2px solid #000000;
+}
+
+tr:nth-child(even) {
+  background-color: #b9b9b9;
+}
+
+th {
+  background-color: #b9b9b9;
+}

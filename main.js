@@ -51,14 +51,23 @@ window.addEventListener("DOMContentLoaded", function(event) {
   }
 })
 
+
+var dummyEntry = {
+  dayOfWeek: $dayOfWeek,
+  time: $time,
+  entryDescription: $entryDescription
+}
+
 function renderEntries() {
   var h3 = document.createElement('h3');
     h3.textContent = 'Scheduled Events for '
   var table = document.createElement('table');
   var thead = document.createElement('thead');
+  var tbody = document.createElement('tbody');
 
   var thTime = document.createElement('th');
   var thDescritpion = document.createElement('th');
+  thDescritpion.className = 'col-two'
 
   thTime.textContent = 'Time';
   thDescritpion.textContent = 'Descritpion';
@@ -66,7 +75,22 @@ function renderEntries() {
   thead.appendChild(thTime);
   thead.appendChild(thDescritpion);
   table.appendChild(thead);
+  table.appendChild(tbody);
 
 
+  for()
+    var tRow = document.createElement('tr');
+    var tColOne = document.createElement('td');
+    tColOne.className = 'col-one';
+    tColOne.textContent = '8:30'
+    var tColTwo = document.createElement('td');
+    tColTwo.className = 'col-two';
+    tColTwo.textContent = 'Eat dinner'
+
+    tbody.appendChild(tRow);
+    tRow.appendChild(tColOne);
+    tRow.appendChild(tColTwo);
+
+  return table
 
 }

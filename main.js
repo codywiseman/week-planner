@@ -21,5 +21,17 @@ $form.addEventListener("submit", function(event) {
   $modalForm.className = 'row position hidden';
   $entryButton.className = "";
   }
+  var $dayOfWeek = document.getElementById('day-of-week')
+  var $time = document.getElementById('time')
+  var $entryDescription = document.getElementById('description')
   $form.reset();
+})
+
+var $weekDayBoxes = document.getElementById('week-day-boxes')
+
+
+window.addEventListener("DOMContentLoaded", function(event) {
+  if (previousEntriesJSON) {
+    $weekDayBoxes.className = 'row align-center height100';
+  }
 })

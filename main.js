@@ -89,8 +89,6 @@ function renderEntries(day) {
   table.appendChild(thead);
   table.appendChild(tbody);
 
-
-
     var tRow = document.createElement('tr');
     var tColOne = document.createElement('td');
     tColOne.className = 'col-one';
